@@ -1,9 +1,11 @@
 FV1 EEProg
 ==========
 
-Expansion board used on conjuntion with an EZ-USB FX2LP (LCSOFT version) Cypress CY7C68013A dev board (source: *bay)
+Expansion board used on conjuntion with an EZ-USB FX2LP (LCSOFT version) Cypress CY7C68013A dev board (source: ebay)
 to create an EEPROM programmer that works directly within the SpinAsm software. Idea based on FV-1 Dev board.
+
 *** DOES NOT INVOLVE COPYING THE ORIGINAL FIRMWARE ***
+
 The trick is to force a new hardware to be enumerated as FV-1 Dev board, after being detected by the SpinAsm software the firmware is uploaded via USB into the RAM of the CY7C68013A microcontroller.
 
 The EZ-USB FX2LP board requires a small modification using an external I2C EEPROM programmer, like i.e. PicKit2:
