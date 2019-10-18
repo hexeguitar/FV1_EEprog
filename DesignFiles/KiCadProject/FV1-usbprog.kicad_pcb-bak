@@ -3,7 +3,7 @@
   (general
     (links 26)
     (no_connects 0)
-    (area 148.500001 87.944999 201.65 150.2)
+    (area 161.849999 107.099999 198.650001 139.900001)
     (thickness 1.6)
     (drawings 33)
     (tracks 144)
@@ -14,7 +14,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -24,14 +24,14 @@
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user)
+    (40 Dwgs.User user hide)
     (41 Cmts.User user)
     (42 Eco1.User user)
     (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user)
-    (47 F.CrtYd user)
+    (47 F.CrtYd user hide)
     (48 B.Fab user)
     (49 F.Fab user)
   )
@@ -479,7 +479,7 @@
       (net 10 "Net-(R1-Pad1)"))
     (pad 2 thru_hole circle (at 3.81 0 270) (size 1.8 1.8) (drill 0.8) (layers *.Cu *.Mask F.SilkS)
       (net 5 /DSP_RST_BUF))
-    (model walter/pth_resistors/rc03.wrl
+    (model Resistors_ThroughHole.3dshapes/rc03.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -508,7 +508,7 @@
       (net 1 /TRG_PWR))
     (pad 2 thru_hole circle (at 3.81 0) (size 1.8 1.8) (drill 0.8) (layers *.Cu *.Mask F.SilkS)
       (net 3 "Net-(D1-Pad1)"))
-    (model walter/pth_resistors/rc03.wrl
+    (model Resistors_ThroughHole.3dshapes/rc03.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -537,7 +537,7 @@
       (net 9 /PROG_EN))
     (pad 2 thru_hole circle (at 3.81 0 90) (size 1.8 1.8) (drill 0.8) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
-    (model walter/pth_resistors/rc03.wrl
+    (model Resistors_ThroughHole.3dshapes/rc03.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

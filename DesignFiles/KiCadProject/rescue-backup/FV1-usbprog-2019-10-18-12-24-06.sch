@@ -1,6 +1,91 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:H_passives
+LIBS:H_ sensors
+LIBS:H_74XX
+LIBS:H_audio_ic
+LIBS:H_CMOS_4000
+LIBS:h_common
+LIBS:H_connectors
+LIBS:H_dev_kits
+LIBS:H_digital_pots
+LIBS:H_diodes
+LIBS:H_lcd
+LIBS:H_linear
+LIBS:H_MCU
+LIBS:H_memory
+LIBS:H_power
+LIBS:H_relays
+LIBS:H_switches
+LIBS:H_transistors
+LIBS:mechanical
+LIBS:passive
+LIBS:pasv-BiTech
+LIBS:pasv-Bourns
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-res
+LIBS:pasv-xtal
+LIBS:semi-diode-1N
+LIBS:semi-diode-BA
+LIBS:semi-diode-DiodesInc
+LIBS:semi-diode-MCC
+LIBS:semi-diode-MMB
+LIBS:semi-diode-NXP
+LIBS:semi-diode-OnSemi
+LIBS:semi-diode-ST
+LIBS:semi-diode-Vishay
+LIBS:semi-opto-misc
+LIBS:semi-thyristor-2N
+LIBS:semi-trans-2N
+LIBS:semi-trans-AO
+LIBS:semi-trans-BC
+LIBS:semi-trans-DiodesInc
+LIBS:semi-trans-EPC
+LIBS:semi-trans-Fairchild
+LIBS:semi-trans-Infineon
+LIBS:semi-trans-IntRect
+LIBS:semi-trans-IXYS
+LIBS:semi-trans-misc
+LIBS:semi-trans-MMB
+LIBS:semi-trans-MPS
+LIBS:semi-trans-NXP
+LIBS:semi-trans-OnSemi
+LIBS:semi-trans-PZT
+LIBS:semi-trans-TI
+LIBS:semi-trans-TIP
+LIBS:semi-trans-Toshiba
+LIBS:wolfson
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:FV1-usbprog-cache
-EELAYER 30 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +100,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FV1-usbprog-rescue:CY7C68013A_dev_kit U2
+L CY7C68013A_dev_kit U2
 U 1 1 55C7AFF3
 P 3850 2550
 F 0 "U2" H 3550 3725 60  0000 C CNN
@@ -26,7 +111,7 @@ F 3 "" H 3900 2025 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FV1-usbprog-rescue:4066 U1
+L 4066 U1
 U 1 1 55C7B0C8
 P 2250 1700
 F 0 "U1" H 2450 1551 40  0000 C CNN
@@ -37,7 +122,7 @@ F 3 "" H 2250 1700 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FV1-usbprog-rescue:4066 U1
+L 4066 U1
 U 2 1 55C7B103
 P 2250 2450
 F 0 "U1" H 2450 2301 40  0000 C CNN
@@ -48,7 +133,7 @@ F 3 "" H 2250 2450 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FV1-usbprog-rescue:4066 U1
+L 4066 U1
 U 3 1 55C7B150
 P 2250 3150
 F 0 "U1" H 2450 3001 40  0000 C CNN
@@ -59,7 +144,7 @@ F 3 "" H 2250 3150 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FV1-usbprog-rescue:4066 U1
+L 4066 U1
 U 4 1 55C7B195
 P 2250 2800
 F 0 "U1" H 2450 2651 40  0000 C CNN
@@ -98,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 2600 2550 2600
 $Comp
-L FV1-usbprog-rescue:R R3
+L R R3
 U 1 1 55C7B8CB
 P 2600 3550
 F 0 "R3" V 2525 3475 40  0000 C CNN
@@ -110,7 +195,7 @@ F 3 "" H 2600 3550 30  0000 C CNN
 $EndComp
 Connection ~ 2600 3300
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 55C7B94F
 P 2600 3800
 F 0 "#PWR01" H 2600 3550 50  0001 C CNN
@@ -127,7 +212,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 2000 2250 2050
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 55C7BAF2
 P 2250 2050
 F 0 "#PWR02" H 2250 1800 50  0001 C CNN
@@ -138,7 +223,7 @@ F 3 "" H 2250 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 55C7BB2E
 P 2850 3800
 F 0 "#PWR03" H 2850 3550 50  0001 C CNN
@@ -155,12 +240,19 @@ Wire Wire Line
 Wire Wire Line
 	2850 2100 2850 2400
 Wire Wire Line
+	2850 2400 2850 2500
+Wire Wire Line
+	2850 2500 2850 2600
+Wire Wire Line
 	2850 2600 2850 3800
+Wire Wire Line
+	2850 2500 3250 2500
 Wire Wire Line
 	3250 2600 2850 2600
 Connection ~ 2850 2600
 Wire Wire Line
 	3250 2400 2850 2400
+Connection ~ 2850 2500
 Wire Wire Line
 	3250 2100 2850 2100
 Connection ~ 2850 2400
@@ -174,7 +266,7 @@ Wire Wire Line
 	2550 1700 2850 1700
 Connection ~ 2850 1900
 $Comp
-L FV1-usbprog-rescue:LED D1
+L LED D1
 U 1 1 55C7BCA4
 P 1800 1500
 F 0 "D1" H 1800 1600 50  0000 C CNN
@@ -185,7 +277,7 @@ F 3 "" H 1800 1500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L FV1-usbprog-rescue:R R2
+L R R2
 U 1 1 55C7BD4A
 P 1800 1050
 F 0 "R2" V 1725 975 40  0000 C CNN
@@ -210,7 +302,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 1700 1800 1700
 $Comp
-L FV1-usbprog-rescue:CAP_NP C1
+L CAP_NP C1
 U 1 1 55C7C0D7
 P 1450 1150
 F 0 "C1" H 1450 1250 40  0000 L CNN
@@ -229,7 +321,7 @@ Wire Wire Line
 	1450 2000 1450 1300
 Connection ~ 2250 2000
 $Comp
-L FV1-usbprog-rescue:CONN_01X05 P1
+L CONN_01X05 P1
 U 1 1 55C7C445
 P 800 2650
 F 0 "P1" H 800 2950 50  0000 C CNN
@@ -263,7 +355,7 @@ Connection ~ 2600 1850
 Text Label 2800 1150 0    60   ~ 0
 PROG_EN
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 55C7CB09
 P 1050 2900
 F 0 "#PWR04" H 1050 2650 50  0001 C CNN
@@ -297,7 +389,7 @@ DSP_RST_BUF
 Text Label 1850 800  0    60   ~ 0
 TRG_PWR
 $Comp
-L FV1-usbprog-rescue:R R1
+L R R1
 U 1 1 55C7E4D5
 P 1700 2450
 F 0 "R1" V 1625 2375 40  0000 C CNN
@@ -324,8 +416,8 @@ Wire Wire Line
 	1950 3050 2600 3050
 Connection ~ 2600 3050
 $Bitmap
-Pos 10450 2300
-Scale 0.800000
+Pos 10250 2300
+Scale 0,700000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 CB 00 00 02 7F 08 06 00 00 00 17 B1 F8 
 B9 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 20 00 49 44 41 54 78 9C EC BD 79 B8 1D 
@@ -6345,7 +6437,7 @@ E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 00 3B
 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 
 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 
 E9 00 3B 4B 86 61 18 86 E9 00 3B 4B 86 61 18 86 E9 C0 FF 0F 39 A4 C9 6A 44 29 4B 6B 00 00 00 00 
-49 45 4E 44 AE 42 60 82 
+49 45 4E 44 AE 42 60 82 FB 
 EndData
 $EndBitmap
 Text Notes 8350 6900 0    157  ~ 31
@@ -6382,6 +6474,8 @@ NoConn ~ 4400 3100
 NoConn ~ 4400 3000
 NoConn ~ 4400 2900
 Wire Notes Line
+	5000 500  5000 4350
+Wire Notes Line
 	500  4350 11150 4350
 Text Notes 2250 4300 0    79   ~ 16
 SCHEMATIC
@@ -6389,7 +6483,7 @@ Text Notes 7450 4300 0    79   ~ 16
 IN SYSTEM PROGRAMMING
 $Bitmap
 Pos 2750 6100
-Scale 1.000000
+Scale 1,000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 05 2C 00 00 03 D3 08 02 00 00 00 35 9D D0 
 45 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 6F 88 23 69 
@@ -9440,7 +9534,7 @@ DF 76 00 00 00 00 00 00 F6 05 25 1C 00 00 00 00 00 45 28 E1 00 00 00 00 00 28 42
 45 28 E1 00 00 00 00 00 28 42 09 07 00 00 00 00 40 11 4A 38 00 00 00 00 00 8A 50 C2 01 00 00 00 
 00 50 84 12 0E 00 00 00 00 80 22 F7 EC 3F 18 C6 B6 62 00 00 00 00 00 B0 6B DC 2D FB 77 42 FC BA 
 8D 24 00 00 00 00 00 EC 1D 96 A3 03 00 00 00 00 A0 08 25 1C 00 00 00 00 00 45 28 E1 00 00 00 00 
-00 A8 F0 C5 17 E2 FF 01 72 AD 3F 5A 10 85 D3 55 00 00 00 00 49 45 4E 44 AE 42 60 82 
+00 A8 F0 C5 17 E2 FF 01 72 AD 3F 5A 10 85 D3 55 00 00 00 00 49 45 4E 44 AE 42 60 82 20 
 EndData
 $EndBitmap
 Text Notes 7300 6050 0    60   ~ 0
@@ -9467,16 +9561,11 @@ Text Notes 5000 4550 0    79   ~ 16
 EZ-USX FX2LP configuration:
 Text Notes 5000 4650 0    60   ~ 0
 (LCSOFT version)
-Text Notes 5100 6950 0    60   ~ 0
+Text Notes 5050 6750 0    60   ~ 0
 1. Install jumper J1 setting the onboard \n   EEPROM I2C address to 0xA2\n\n2. Hook up your EEPROM programmer\n  (ie. PICKIT2) to the I2C: SCL, SDA, \n   3.3V and GND lines\n\n3. Plug in the USB to power up the board\n\n4. Erase the EEPROM and write seq\n\n   C0 79 18 01 10 00 00 00\n\n   starting from the address 0x00\n\n5. Unplug the USB cable\n\n6. Install the daughter board\n\n7. Plug in the USB cable - \n   the board should be detected as \n   Spin Dev Board ONLINE within \n   the SpinAsm software 
-Wire Wire Line
-	2850 2400 2850 2600
-NoConn ~ 3250 2500
-Wire Notes Line
-	5000 500  5000 4350
 $Bitmap
-Pos 7650 2200
-Scale 0.800000
+Pos 7500 2200
+Scale 0,800000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 06 73 00 00 03 9D 08 03 00 00 00 69 8E 67 
 F8 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 30 50 4C 54 45 FF FF FF F4 F4 F4 A9 A9 
@@ -10281,7 +10370,7 @@ D4 46 CB 68 FB 83 E1 D1 4C 2E 0D 00 8F 31 BC A0 AF FC 50 CE 9C D1 3A CA B3 A9 BB
 AB CF BD 8D B6 3F BA 0D 94 C9 A5 01 E0 29 BE BB 33 E7 E5 F5 F9 12 F4 23 07 B2 6E 59 73 0D 67 B4 
 FD D1 74 37 4C 2E 0D 00 4F 11 0D 33 41 36 9F 39 AF B7 97 67 51 1C 65 BE 72 9C E2 05 A1 B4 6C B4 
 FD D1 DD A4 4C 2E 0D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 59 FE 00 C7 EA AD 00 FD 
-5B 00 F7 00 00 00 00 49 45 4E 44 AE 42 60 82 
+5B 00 F7 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
 EndData
 $EndBitmap
 $EndSCHEMATC

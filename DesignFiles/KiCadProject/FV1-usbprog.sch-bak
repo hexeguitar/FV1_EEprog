@@ -324,8 +324,8 @@ Wire Wire Line
 	1950 3050 2600 3050
 Connection ~ 2600 3050
 $Bitmap
-Pos 10450 2300
-Scale 0.800000
+Pos 10250 2300
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 CB 00 00 02 7F 08 06 00 00 00 17 B1 F8 
 B9 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 20 00 49 44 41 54 78 9C EC BD 79 B8 1D 
@@ -6382,6 +6382,8 @@ NoConn ~ 4400 3100
 NoConn ~ 4400 3000
 NoConn ~ 4400 2900
 Wire Notes Line
+	5000 500  5000 4350
+Wire Notes Line
 	500  4350 11150 4350
 Text Notes 2250 4300 0    79   ~ 16
 SCHEMATIC
@@ -9469,14 +9471,9 @@ Text Notes 5000 4650 0    60   ~ 0
 (LCSOFT version)
 Text Notes 5100 6950 0    60   ~ 0
 1. Install jumper J1 setting the onboard \n   EEPROM I2C address to 0xA2\n\n2. Hook up your EEPROM programmer\n  (ie. PICKIT2) to the I2C: SCL, SDA, \n   3.3V and GND lines\n\n3. Plug in the USB to power up the board\n\n4. Erase the EEPROM and write seq\n\n   C0 79 18 01 10 00 00 00\n\n   starting from the address 0x00\n\n5. Unplug the USB cable\n\n6. Install the daughter board\n\n7. Plug in the USB cable - \n   the board should be detected as \n   Spin Dev Board ONLINE within \n   the SpinAsm software 
-Wire Wire Line
-	2850 2400 2850 2600
-NoConn ~ 3250 2500
-Wire Notes Line
-	5000 500  5000 4350
 $Bitmap
-Pos 7650 2200
-Scale 0.800000
+Pos 7500 2200
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 06 73 00 00 03 9D 08 03 00 00 00 69 8E 67 
 F8 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 30 50 4C 54 45 FF FF FF F4 F4 F4 A9 A9 
@@ -10284,4 +10281,7 @@ FD D1 DD A4 4C 2E 0D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C0 59 FE 00
 5B 00 F7 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	2850 2400 2850 2600
+NoConn ~ 3250 2500
 $EndSCHEMATC
