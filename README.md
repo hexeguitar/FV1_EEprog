@@ -31,7 +31,10 @@ Automatic resetting the DSP after firmware upload:
 this feature is done by quickly changing the T0 line (internal/external set of programs), which results in rereading the current DSP program.
 In order to make a use of it in your application do not tie up the T0 line directly to the VDD (3.3V), but use a 10k pull up resistor. 
 
+*** UPDATE 10.2019 ***
+I have updated the project to work with the newer CY7C68013A dev boards.
+
 Here is the link to the OSH Park project:
 
-https://www.oshpark.com/shared_projects/okfY0ITb
+https://oshpark.com/shared_projects/5Jfe9GrT
 
